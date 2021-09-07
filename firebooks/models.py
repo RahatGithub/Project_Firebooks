@@ -42,3 +42,10 @@ class TopMembers(models.Model):
     name = models.CharField(max_length=40)
     def __str__(self):
         return self.name
+
+class Contact(models.Model):
+    email = models.CharField(max_length=60)
+    name = models.CharField(max_length=60)
+    msg = models.TextField()
+    def __str__(self):
+        return self.email
