@@ -23,9 +23,11 @@ def contact(request):
 
         contact = Contact(email=email, name=name, msg=msg)
         contact.save()
+        messages.success(request, 'Profile details updated.')
+
 
     return render(request, "contact.html")
-    
+
     #___________When submitted the same email address______ 
     #___________it should show an error message____________
 

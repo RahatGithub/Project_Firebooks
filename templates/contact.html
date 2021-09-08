@@ -12,6 +12,8 @@
   </head>
   <body>
     
+    {% block body %}
+
     <form action="contact.html" method="post">
 
         {% csrf_token %}
@@ -36,6 +38,8 @@
         </div>
 
     </form>
+
+    {% endblock %}
 
     <!-- Optional JavaScript; choose one of the two! -->
 

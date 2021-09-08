@@ -5,5 +5,4 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('contact.html', views.contact, name="contact"),
     path('sorry.html', views.sorry, name="sorry"),
-    # path("contact", views.contact, name="contact"),
 ]
