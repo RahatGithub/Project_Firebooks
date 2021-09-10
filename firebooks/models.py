@@ -4,7 +4,7 @@ from django.db import models
 class PopularBooks(models.Model):
     img = models.ImageField(upload_to='pics')
     title = models.CharField(max_length=30)
-    desc = models.TextField()
+    author = models.CharField(max_length=30)
     link = models.TextField()
     def __str__(self):
         return self.title
@@ -13,7 +13,7 @@ class PopularBooks(models.Model):
 class Category1(models.Model):
     img = models.ImageField(upload_to='pics')
     title = models.CharField(max_length=30)
-    desc = models.TextField()
+    author = models.CharField(max_length=30)
     link = models.TextField()
     def __str__(self):
         return self.title
@@ -22,7 +22,7 @@ class Category1(models.Model):
 class Category2(models.Model):
     img = models.ImageField(upload_to='pics')
     title = models.CharField(max_length=30)
-    desc = models.TextField()
+    author = models.CharField(max_length=30)
     link = models.TextField()
     def __str__(self):
         return self.title
@@ -31,7 +31,7 @@ class Category2(models.Model):
 class Category3(models.Model):
     img = models.ImageField(upload_to='pics')
     title = models.CharField(max_length=30)
-    desc = models.TextField()
+    author = models.CharField(max_length=30)
     link = models.TextField()
     def __str__(self):
         return self.title

@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'project_firebooks.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'firebooks',
+        'NAME': 'Firebooks',
         'USER': 'postgres',
         'PASSWORD': '12345',
         'HOST': 'localhost' 
