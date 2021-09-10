@@ -73,22 +73,30 @@
     <h3 class="text-center text-info">POPULAR BOOKS</h3>
 
     <div>
-        <div class="row row-cols-1 row-cols-md-4 g-4 m-5 mt-2">
 
+        <div class="row row-cols-1 row-cols-md-4 g-4 m-5 mt-2">
+        
         {% for book in popular_books %}
 
-            <div class="col">
-                <div class="card shadow p-2 mb-5 bg-light rounded">
-                    <img src="{{book.img.url}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{book.title}}</h5>
-                        <p class="card-text">{{book.desc}}</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="{{book.link}}" target="_blank"><button type="button" class="btn btn-outline-info">View</button></a>
+                <div class="col">
+                    <div class="card mb-3 shadow bg-light rounded" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                            <img src="{{book.img.url}}" class="img-fluid m-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{book.title}}</h5>
+                                <p class="card-text">{{book.desc}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="{{category.link}}" target="_blank" class="card-link btn btn-outline-info">View</a>
+                                    <a href="#" class="card-link btn btn-info text-white">Download</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
         {% endfor %}
 
@@ -104,19 +112,26 @@
 
             <h4 class="text-info">Sci-Fi <span class="text-dark">(Most Searched)</span></h4>
 
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
 
                 {% for category in category_1 %}
 
                 <div class="col">
-                    <div class="card shadow p-2 mb-5 bg-light rounded">
-                        <img src="{{category.img.url}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{category.title}}</h5>
-                            <p class="card-text">{{category.desc}}</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="{{category.link}}" target="_blank"><button type="button" class="btn btn-outline-info">View</button></a>
+                    <div class="card mb-3 shadow bg-light rounded" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                            <img src="{{category.img.url}}" class="img-fluid m-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{category.title}}</h5>
+                                <p class="card-text">{{category.desc}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="{{category.link}}" target="_blank" class="card-link btn btn-outline-info">View</a>
+                                    <a href="#" class="card-link btn btn-info text-white">Download</a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,19 +144,27 @@
         <!--________CATEGORY 2_______-->
         <div class="m-5 mt-2">
             <h4 class="text-info">Literature <span class="text-dark">(Most Searched)</span></h4>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
 
                 {% for category in category_2 %}
 
                 <div class="col">
-                    <div class="card shadow p-2 mb-5 bg-light rounded">
-                        <img src="{{category.img.url}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{category.title}}</h5>
-                            <p class="card-text">{{category.desc}}</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="{{category.link}}" target="_blank"><button type="button" class="btn btn-outline-info">View</button></a>
+                    <div class="card mb-3 shadow bg-light rounded" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                            <img src="{{category.img.url}}" class="img-fluid m-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{category.title}}</h5>
+                                <p class="card-text">{{category.desc}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="{{category.link}}" target="_blank" class="card-link btn btn-outline-info">View</a>
+                                    <a href="#" class="card-link btn btn-info text-white">Download</a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,22 +177,44 @@
         <!--________CATEGORY 3_______-->
         <div class="m-5 mt-2">
             <h4 class="text-info">History <span class="text-dark">(Most Searched)</span></h4>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-2">
 
                 {% for category in category_3 %}
-
+                
                 <div class="col">
-                    <div class="card shadow p-2 mb-5 bg-light rounded">
-                        <img src="{{category.img.url}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{category.title}}</h5>
-                            <p class="card-text">{{category.desc}}</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="{{category.link}}" target="_blank"><button type="button" class="btn btn-outline-info">View</button></a>
+                    <div class="card mb-3 shadow bg-light rounded" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 p-2">
+                            <img src="{{category.img.url}}" class="img-fluid m-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{category.title}}</h5>
+                                <p class="card-text">{{category.desc}}</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="{{category.link}}" target="_blank" class="card-link btn btn-outline-info">View</a>
+                                    <a href="#" class="card-link btn btn-info text-white">Download</a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!--<div class="col">
+                    <div class="card h-100 shadow bg-light rounded">
+                        <img src="{{category.img.url}}" class="card-img-top p-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{category.title}}</h5>
+                            <p class="card-text">{{category.desc}}</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="{{category.link}}" target="_blank" class="card-link btn btn-outline-info">View</a>
+                                <a href="#" class="card-link btn btn-info text-white">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
 
                 {% endfor %}
 
