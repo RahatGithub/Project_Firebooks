@@ -17,9 +17,9 @@ def index(request):
 def contact(request):
 
     if request.method == 'POST':
-        email = request.POST.get('email')
-        name = request.POST.get('name')
-        msg = request.POST.get('msg')
+        email = request.POST['email']
+        name = request.POST['name']
+        msg = request.POST['msg']
 
         contact = Contact(email=email, name=name, msg=msg)
         contact.save()

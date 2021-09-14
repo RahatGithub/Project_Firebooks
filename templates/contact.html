@@ -14,11 +14,11 @@
     
     {% block body %}
 
-    <form action="contact.html" method="post">
+    <form action="contact.html" method="post" class="d-flex justify-content-center">
 
         {% csrf_token %}
 
-        <div class="m-5">
+        <div class="m-5 p-5 border border-primary">
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
@@ -32,9 +32,9 @@
           </div>
           <div class="mb-3">
               <label for="msg" class="form-label">Message</label>
-              <input type="text" class="form-control" name="msg">
+              <textarea class="form-control" name="msg" id="msg" rows="5"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary form-control">Send</button>
         </div>
 
     </form>

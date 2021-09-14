@@ -1,16 +1,15 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, auth
 
 def register(request):
     
     if request.method == "POST" :
 
-        email = request.POST.get('email')
+        username = request.POST['username']
 
-        username = request.POST.get('username')
+        email = request.POST['email']
 
-        password = request.POST.get('password')
+        password = request.POST['password']
 
         user = User.objects.create_user(username, email, password)
 
@@ -26,13 +25,15 @@ def login(request):
 
     if request.method == "POST":
 
-        username = request.POST.get('username')
+        username = request.POST['username']
 
-        password = request.POST.get('password')
+        password = request.POST['password']
 
-        user = authenticate(request, username=username, password=password)
+        user = auth.authenticate(request, username=username, password=password)
 
-        if user is not None:
+        if user:
+
+            auth.login(request, user)
 
             return redirect("/")
 
@@ -45,4 +46,8 @@ def login(request):
 
 
 def logout(request):
-    pass
+
+    auth.logout(request)
+
+    return redirect("/")
+
