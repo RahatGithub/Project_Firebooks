@@ -16,9 +16,9 @@ Hi! I am Rahat.
 
 Currently I am - 
 
-Studying Computer Science Engineering in Sylhet Engineering College.
+> Studying Computer Science Engineering in Sylhet Engineering College.
 
-Working as a Web Developer at Actuate Research & Consulting (www.actuatebd.com) since September, 2020.
+> Working as a Web Developer at Actuate Research & Consulting (www.actuatebd.com) since September, 2020.
 
 
 My interests are -
