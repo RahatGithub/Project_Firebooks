@@ -23,9 +23,9 @@ Currently I am -
 
 My interests are -
 
->> Python Programming
->> Web Development
->> Machine Learning
->> Data Science
->> IoT
->> "Social Welfare..."
+> Python Programming
+> Web Development
+> Machine Learning
+> Data Science
+> IoT
+> "Social Welfare..."
