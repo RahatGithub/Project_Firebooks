@@ -12,13 +12,24 @@
 <body>
 
     <div class="d-flex justify-content-center m-5 p-5">
-        <form action="" method="post">
+        <form action="" method="post" class="border border-primary p-5">
     
             {% csrf_token %}
         
             <input type="text" class="form-control" name="username" placeholder="username"> <br>
-            <input type="password" class="form-control" name="password"> <br>
-            <input type="submit" class="form-control btn btn-primary" value="Login">
+            <input type="password" class="form-control" name="password" placeholder="*********"> <br>
+            Don't have an account? <a href="../register">Register now</a>
+
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit" class="form-control btn btn-primary my-2" value="Login">
+                </div>
+                <div class="col">
+                    <a href="../../" class="form-control btn btn-outline-primary my-2">Home</a>
+                </div>
+            </div>
+
             
         </form>
     </div>

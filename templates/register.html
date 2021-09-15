@@ -9,20 +9,36 @@
 
     <title>Register</title>
 </head>
-<body>
+
+    <body>
 
     <div class="d-flex justify-content-center m-5 p-5">
-        <form action="" method="post">
+
+        <form action="" method="post" class="border border-primary p-5">
     
             {% csrf_token %}
-        
-            <input type="email" class="form-control" name="email" placeholder="email"> <br>
+
+            <input type="text" class="form-control" name="email" placeholder="email"> <br>
             <input type="text" class="form-control" name="username" placeholder="username"> <br>
-            <input type="password" class="form-control" name="password"> <br>
-            <input type="submit" class="form-control btn btn-primary" value="Register">
+            <input type="password" class="form-control" name="password" placeholder="*********"> <br>
+            Already have an account? <a href="../login">Login</a>
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit" class="form-control btn btn-primary my-2" value="Register">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="../../" class="form-control btn btn-outline-primary my-2">Home</a>
+                </div>
+            </div>
+            
         </form>
+
     </div>
 
-</body>
+    </body>
+    
 </html>
 
