@@ -11,7 +11,7 @@ def index(request):
     category_3 = Category3.objects.all()
     top_members = TopMembers.objects.all()
 
-    return render(request, "index.html", {'popular_books' : popular_books, 'category_1' : category_1, 'category_2' : category_2, 'category_3' : category_3, 'top_members' : top_members})
+    return render(request, "index.html", {'popular_books' : popular_books[:4], 'category_1' : category_1[:4], 'category_2' : category_2[:4], 'category_3' : category_3[:4], 'top_members' : top_members[:4]})
 
 
 def contact(request):

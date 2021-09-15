@@ -21,20 +21,21 @@
         <div class="m-5 p-5 border border-primary">
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
             <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
             </div>
           </div>
           <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" name="name">
+              <input type="text" class="form-control" name="name" required>
           </div>
           <div class="mb-3">
               <label for="msg" class="form-label">Message</label>
-              <textarea class="form-control" name="msg" id="msg" rows="5"></textarea>
+              <textarea class="form-control" name="msg" id="msg" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary form-control">Send</button>
+          <a href="../../" class="btn btn-outline-primary form-control mt-2">Home</a>
         </div>
 
     </form>
