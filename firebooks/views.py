@@ -50,3 +50,17 @@ def contact(request):
 def sorry(request):
     return render(request, "sorry.html")
 
+
+def sci_fi(request):
+    category_1 = Category1.objects.all()
+    return render(request, "sci_fi.html", {'category_1' : category_1})
+
+
+def literature(request):
+    category_2 = Category2.objects.all()
+    return render(request, "literature.html", {'category_2' : category_2})
+
+
+def history(request):
+    category_3 = Category3.objects.all()
+    return render(request, "history.html", {'category_3' : category_3})
